@@ -1,0 +1,124 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:id="@+id/Detaildfragment"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.amrayoub.moviesapp.detaildActivity"
+    tools:layout="@layout/fragment_detaild"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_height="220dp"
+        android:layout_width="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/textviewOverview"
+            android:text="Overview"
+            android:fontFamily="sans-serif-medium"
+
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/moviePoster"
+            />
+    <TextView
+        android:id="@+id/movieOverview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/textviewOverview"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/movieRate"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:textColor="@color/grey"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/textView" />
+    <TextView
+        android:text="Rate : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/moviePoster"
+        />
+    <TextView
+        android:id="@+id/movieDate"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/grey"
+        android:layout_toRightOf="@+id/textView2"
+         />
+
+    <TextView
+        android:text="Date : "
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_toRightOf="@+id/moviePoster" />
+    <Button
+        android:id="@+id/favouritebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/moviePoster" />
+        <TextView
+            android:id="@+id/textviewauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/movieOverview"
+             />
+
+        <TextView
+            android:text="No Reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieauthor"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/textviewauthor"
+            />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trailers"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/textViewvideos"
+        android:layout_below="@+id/movieauthor"
+        />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movievideos"
+            android:layout_below="@+id/textViewvideos"
+            >
+        </ListView>
+    </RelativeLayout>
+</ScrollView>
+
